@@ -9,13 +9,16 @@ router.post('/', (req, res) => {
     res.render('layout',data)
 });
 
+
 router.post('/dashboard', (req, res) => {
     async function run() {
         const browser = await puppeteer.launch({ headless: false });
         const page = await browser.newPage();
         
-        const proxy = 'https://proxybot.io/api/v1/AQTvV70KEX04CNkqkfTIoeHYm853?url=http://httpbin.org/ip';
+        // const proxy = 'https://proxybot.io/api/v1/API_KEY?url=http://httpbin.org/ip';
+        const proxy = 'https://proxybot.io/api/v1/ORgUyg0s9ZZG4plVv26kN0gEI3m1?url=';
         const pageUrl = `${proxy}${req.body.fname}`;
+        // const pageUrl = `${proxy}${req.body.fname}`;
 
         
         

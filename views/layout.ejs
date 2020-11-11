@@ -6,12 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proxy server</title>
 </head>
-<link rel="stylesheet" href="style.css">
+<!-- <link rel="stylesheet" href="public/main.css"> -->
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
-<!-- <style>
+<style>
     /* css reset */
+    body {
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    /* height: 100%;
+    width: 100%; */
+    /* background: url('https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg'); */
+    background: url('https://c0.wallpaperflare.com/preview/765/532/1021/vpn-for-home-security-vpn-for-android-vpn-for-mobile-vpn-for-iphone.jpg');
+    background-position: center;
+    opacity: 1.5;
+    background-repeat: no-repeat;
+    background-size: 100em;
+    height: 100%;
+    width: 100%;
+
+}
+.main{
+    /* border: 10px solid black;
+    border-radius: 20px; */
+}
+
+.left {
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 20px;
+    
+}
+
+.left img {
+    width: 85px;
+    
+}
+
+.left div {
+    text-align: center;
+}
+
+
+.mid {
+    display: block;
+    margin: 20px auto;
+    width: 60%;
+    font-size: 35px;
+    border: 2px solid black; 
+     border-radius: 35px;
+     text-align: center;
+}
+
+.right {
+
+    /* border: 2px solid rgb(24, 10, 228); */
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 20px;
+}
+
+.heading {
+    /* display: inline-block; */
+    
+}
+
+.navbar li {
+    /* display: inline-block; */
+    text-align: center;
+    font-size: 45px;
+}
+.btn{
+    margin: none;
+    padding: none;
+    
+    width: auto;
+    height: auto;
+    background-color: #ebaa1700;
+    border: none;
+}
+
+
+.btn img{
+    height: 45%;
+    width: 20%;
+    margin: none;
+    margin: -10px 31px;
+    border-radius: 234px
+    
+}
+
+
+/* .btn:hover {
+    background-color: rgb(107, 109, 104);
+} */
+
+.container {
+    
+    /* border: 2px solid rgb(16, 20, 16); */
+    margin: 60px 60px;
+    /* padding: 33px 68px; */
+    width: auto;
+    /* height: auto    ; */
+    margin-left: 25%;
+    /* border-radius: 30px; */
+
+}
+
+
+.container h1 {
+    text-align: initial;
+    margin: 14px 164px;
+}
+#fname    {
+    text-align: center;
+    width: 346px;
+    display: grid;
+    margin: 6px 197px;
+    border: 3px solid #f9f8fc;
+    background-color: rgb(175, 242, 250);
+    border-radius: 8px;
+}
+#label{
+    text-align: center;
+    width: 346px;
+    display: grid;
+    margin: -14px 197px;
+    font-size: x-large;
+}
+
+
    
-</style> -->
+</style>
 
 <body>
     <div class="main">
@@ -44,7 +174,7 @@
         <h1>Join the best server for your pc</h1>
 
         <form id=input action="/dashboard" method="POST">
-            <label for="fname">Enter Website</label><br>
+            <label id="label"for="fname">Enter Website</label><br>
             <input type="text" id="fname" value="<%= typeof name != 'undefined' ? name : '' %>" name="fname"><br>
             <button class="btn" type="submit" ><img src="https://cdn.pixabay.com/photo/2016/10/07/14/56/power-button-1721739_960_720.jpg" ></button>
             
